@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KK Create and Build</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="shortcut icon" href="logo.png" type="">
+</head>
+<style>
+   * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+.next{
+   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 66.20%;
+  width: 50px;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+}
+
+.statement{
+   margin-left: 950px;
+   position: absolute;
+   margin-top: -480px;
+   text-align: center;
+   font-size: 18px;
+   color: navy;
+   font-weight: bold;
+   box-shadow: #bbb;
+   user-select: none;
+}
+
+.h1{
+   margin-left: 1000px;
+   position: absolute;
+   background-color: green;
+   width: 300px;
+   height: 3px;
+   margin-top: -410px;
+}
+
+h2{
+   margin-left: 1000px;
+   position: absolute;
+   margin-top: -370px;
+   font-size: 30px;
+   color: navy;
+   font-weight: bolder;
+   user-select: none;
+   text-transform: uppercase;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sentence{
+   margin-left: 1060px;
+   margin-top: -300px;
+   position: absolute;
+   text-align: center;
+}
+.sent{
+   position: absolute;
+   margin-left: 985px;
+   margin-top: -200px;
+   font-size: 16px;
+   font-weight: bold;
+}
+.lines{
+   margin-left: 930px;
+   position: absolute;
+   margin-top: -60px;
+   text-align: center;
+   font-size: 18px;
+   color: navy;
+   font-weight: bold;
+   font-style: oblique;
+   font-family: cursive;
+   box-shadow: #bbb;
+}
+
+.h2{
+   margin-left: 970px;
+   position: absolute;
+   background-color: green;
+   width: 300px;
+   height: 3px;
+   margin-top: -90px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  margin-top: 50px;
+}
+.logo .txt{
+   margin-top: -65px;
+   color: white;
+   margin-left: 80px;
+}
+.swiper-container{
+   overflow: hidden;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 667px) {
+  .prev, .next,.text {font-size: 10px}
+  .next{
+   margin-left: 85px;
+   width: 25px;
+  }
+  .fade{
+   width: 360px;
+   margin-top: -5px;
+   margin-left: 1px;
+  }
+  #div1{
+   margin-top: 10px;
+   width: 360px;
+  }
+  .statement{
+   font-size: 18px;
+   margin-left: 30px;
+   margin-top: -180px;
+   text-align: center;
+  }
+  .h1{
+   margin-left: 30px;
+   width: 300px;
+   height: 2px;
+   margin-top: -110px;
+  }
+  h2{
+   margin-left: 40px;
+   margin-top: -100px;
+   font-size: 28px;
+  }
+  .lines{
+   font-size: 18px;
+   margin-left: 23px;
+   padding: 2rem;
+   margin-top: -260px;
+  }
+  .h2{
+   margin-left:30px;
+   width: 300px;
+   height: 2px;
+   margin-top: 80px;
+  }
+  .text{
+   font-size: 4px;
+  }
+  .sentence{
+   margin-left: 80px;
+   margin-top: -60px;
+   font-size: 18px;
+   font-weight: bold;
+  }
+  .sent{
+   margin-left: 68px;
+   margin-top: 50px;
+   font-size: 18px;
+  }
+}  
+@media screen and(max-width: 480px) {
+   .statement{
+      text-align: center;
+   }
+   .next{
+   margin-left: 80px;
+  }
+}
+
+</style>
+<body>
+    <!-- header section starts  -->
+
+<header class="header">
+    <a href="#" class="logo"><img src="logo.png" alt="" class="img"><h2 class="txt">KK CREATE AND<br> Build</h2></a>
+ 
+    <nav class="navbar">
+       <a href="index.html">Home</a>
+       <a href="#projects">Projects</a>
+       <a href="#">News & Media</a>
+       <a href="#contact">Contact</a>
+       <a href="#blogs">Blogs</a>
+       <a href="#">Privacy Policy</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+ </header>
+ 
+ <!-- header section ends -->
+ <a href="index.html"><marquee>!! Ganesh Chaturthi Special Offer !! Save Upto 5Lac</marquee></a>
+<!-- Popup Enquiry Form -->
+<div id="overlay"></div>
+
+<div id="popup-form">
+   <i class="fas fa-times" id="close-icon"></i>
+   <h2>Enquiry Form</h2>
+   <form id="enquiryForm" name="form" method="post" action="https://script.google.com/macros/s/AKfycbwDVPxQwGT91GOL9iATMRIo1hyEs7YkWPwqSNmJ7bYRYfhlVGbx98A-K0B9wpCdZ_LX9w/exec">
+       <input type="text" id="name" name="name" placeholder="Your Name" required>
+       <input type="number" id="number" name="number" placeholder="Your Mobile no." required>
+       <input type="email" id="email" name="email" placeholder="Your Email" required>
+       <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+       <button type="submit" style="margin-bottom: 30px;">Submit</button>
+       <p style="margin-top: -20px;font-size: 2.5rem;text-align: center;color: navy;">EMI starts with &nbsp;<i class="fa fa-inr" style="font-size: 4rem;color: green;"></i><font size="6rem" weight="bold" color="green">8000</font> </p>
+   </form>
+</div>
+<!-- Popup Form Ends -->
+
+<!-- About us start-->
+  
+<section class="about" id="about">
+<div class="box-container">
+
+   <div class="box" style="background-image: url(water.jpeg);">
+      <h3 class="num" data-val="48000">0000+</h3>
+      <p>kWh(units)</p>
+      <p>Solar Power Generated</p>
+   </div>
+
+   <div class="box" style="background-color: green;">
+      <h3 class="num" data-val="66000+" >00000+</h3>
+      <p>liter(units)</p>
+      <p>Rainwater Harvested</p>
+   </div>
+
+</div>
+</section>
+<!-- About Us ends-->
+ 
+<!-- home section starts -->
+  
+<div id="div1">
+    <div class="slideshow-container">
+ 
+       <div class="mySlides fade">
+         <div class="numbertext">1 / 5</div>
+         <img src="picture-from-back-person-stting-wooden-porch-extending-into-high-mountain-cliff_916191-112079.jpg" style="width:100% ">
+         <div class="text">representation purpose only</div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 5</div>
+         <img src="building-with-sign-that-says-welcome-park_1064589-239890.jpg" style="width:100%">
+         <div class="text">representation purpose only</div>
+       </div>
+       
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 5</div>
+         <img src="living-room-with-couch-coffee-table-window_1086760-58695.jpg" style="width:100%">
+         <div class="text">representation purpose only</div>
+       </div>
+ 
+       <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="indoor-design-luxury-resort.jpg" style="width:100%">
+          <div class="text">representation purpose only</div>
+       </div>
+       
+       <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="size-dimensions-kitchen-apartment-ai-generated-illustration_866663-50526.jpg" style="width:100%">
+          <div class="text">representation purpose only</div>
+       </div>
+ 
+       <a class="prev" onclick="plusSlides(-1)">❮</a>
+       <a class="next" onclick="plusSlides(1)">❯</a>
+       
+       </div>
+       <br>
+       
+       <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span> 
+       </div>
+       
+ </div>
+ 
+ <p class="statement">"Embrace the Beauty of Nature<br> from Your Own Balcony"<p>
+    <p class="lines">"खरीदें फ्लैट, जहाँ पहाड़ों की सुंदरता<br> हो आपके साथ।“</p>
+    <hr class="h1">
+    <h2>KK Create and Build</h2>
+    <p class="sentence">Welcome to<br>Radha Nilaya Complex <br> 10+ Acres<br>20+ Amenities</p>
+    <p class="sent">Spacious 1,2 BHK Homes </p>
+ <hr class="h2">
+ <p style="margin-top: 100px;font-size: 2.5rem;text-align: center;color: navy;">EMI starts with &nbsp;<i class="fa fa-inr" style="font-size: 4rem;color: green;"></i><font size="6rem" weight="bold" color="green">8000</font> </p>
+  <!-- home section ends -->
+ 
+  <!-- amenities section starts  -->
+   <h1 class="heading">Amenities</h1>
+   <div class="my-slideshow-container">
+      <div class="my-slideshow">
+         <div class="my-slide">
+            <img src="RERA APPROVED.png" alt="Image 1">
+            <div class="my-caption">Rera Approved</div>
+         </div>
+         <div class="my-slide">
+            <img src="solar power.jpeg" alt="Image 2">
+            <div class="my-caption">Solar Power</div>
+         </div>
+         <div class="my-slide">
+         <img src="Rainwater-Harvesting-1.png" alt="Image 3">
+         <div class="my-caption">Water Harvesting</div>
+         </div>
+         <div class="my-slide">
+      <img src="sewage treatment plant.png" alt="img 4">
+         <div class="my-caption">STP</div>
+      </div>
+      <div class="my-slide">
+      <img src="building lift.jpg" alt="img 5">
+      <div class="my-caption">Lift</div>
+      </div>
+      <div class="my-slide">
+         <img src="FIRE FIGHTING SYSTEM.jpg" alt="img 6">
+      <div class="my-caption">Fire Fighting System</div>
+      </div>
+<div class="my-slide">
+   <img src="meditation.jfif" alt="img 7">
+   <div class="my-caption">Meditation Area</div>
+</div>
+<div class="my-slide">
+   <img src="outdoor gymnasium.jpg" alt="img 8">
+   <div class="my-caption">Outdoor Gym</div>
+</div>
+<div class="my-slide">
+   <img src="people jogging in garden.jpg" alt="img 9">
+   <div class="my-caption">Jogging Track</div>
+</div>
+<div class="my-slide">
+   <img src="security.jpg" alt="img 10">
+   <div class="my-caption">Security</div>
+</div>
+<div class="my-slide">
+   <img src="senior citizen area.jpg" alt="img 11">
+   <div class="my-caption">Senior Citizen Area</div>
+</div>
+<div class="my-slide">
+   <img src="landscape garden.jfif" alt="img 12">
+   <div class="my-caption">Garden</div>
+</div>
+<div class="my-slide">
+   <img src="cctv-security-camera-ceiling.jpg" alt="img 13">
+   <div class="my-caption">CCTV surveillance</div>
+</div>
+<div class="my-slide">
+   <img src="cricket turf.jpg" alt="img 14">
+   <div class="my-caption">Cricket Turf</div>
+</div>
+      </div>
+   </div>
+
+   <div class="list-container" style="border: 1px solid black; margin-top: 10px;">
+      <ol type="1">
+         <li>Rera Approved</li>
+         <li>Solar Power</li>
+         <li>Water Harvesting</li>
+         <li>Sewage treatment plant</li>
+         <li>Lift</li>
+         <li>Fire Fighting System</li>
+         <li>Meditation Area</li>
+         <li style="margin-left: 200px; margin-top: -145px;">Outdoor Gym</li>
+         <li style="margin-left: 200px;">Jogging Track</li>
+         <li style="margin-left: 200px;">Security</li>
+         <li style="margin-left: 200px;">Senior Citizen Area</li>
+         <li style="margin-left: 200px;">Garden</li>
+         <li style="margin-left: 200px;">CCTV surveillance</li>
+         <li style="margin-left: 200px;">Cricket Turf</li>
+      </ol>
+   </div>
+  <!-- amenities section ends-->
+
+  <!-- Nearby section -->
+   <div id="div3" style="height: 300px;border: 1px solid black;">
+      <h1 class="heading" style="margin-top: 8px;">Nearby Places</h1>
+      <h2 style="margin-top: 100px;">SCHOOLS</h2>
+   </div>
+   <a href=""><button style="border: 1px solid navy;height: 40px;width: 150px; margin-top: 15px;margin-left: 110px;background-color: green;font-size: 1.7rem;border-radius: 20px;box-shadow: 10px #bbb;"><b>Download Brochure</b></button></a>
+  <!-- Nearby Section -->
+  <!-- projects section starts  -->
+
+<section class="projects" id="projects">
+
+  <h1 class="heading"> our projects </h1>
+
+   <div id="slider">
+      <figure>
+         <div class="content">
+            <div class="info">
+               <h3>DWARKADHISH</h3>
+               <p>RERA No.P99000053015</p>
+            </div>
+         </div>
+         <div class="image">
+            <img src="radha-complex.jpg"> </div>
+         <div class="content1">
+               <div class="info">
+                  <h3>Radha Nilaya</h3>
+                  <p style="text-transform: uppercase;">construction, design</p>
+               </div>
+         </div> 
+         <div class="image">  
+            <img src="exterior view.jfif"></div>
+            <div class="content2">
+               <div class="info">
+                  <h3>Natures Temple House</h3>
+                  <p style="text-transform: uppercase;">construction, design</p>
+               </div>
+         </div>    
+         <div class="image">   
+            <img src="natures-temple1.jpg"></div>
+      </figure>
+   </div>
+
+</section>
+
+<!-- projects section ends -->
+
+<!-- floor plan start-->
+<section class="floor">
+<h1 class="heading"> FLOOR PLAN </h1>
+<div class="plan">
+   <img src="TYPICAL.jpg">
+   <img src="radha-nilaya3.jpg">
+   <img src="radha-nilaya2.jpg">
+</div>
+</section>
+<!-- floor plan ends-->
+
+<!-- Gallery section starts -->
+<h1 class="heading" style="margin-top: 10px;">Gallery</h1>
+<div class="swiper-container">
+   <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="solar power.jpeg" alt="Image 1" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"><br>Solar Power</div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="fire.jpeg" alt="Image 2" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"><br>Fire Fighting System</div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img1.jpeg" alt="Image 3" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="KITCHEN PLATFORM.png" alt="Image 4" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"><br>Kitchen</div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="exterior view.jfif" alt="Image 5" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"><br>Exterior View</div>
+      <!-- Slide 6 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img2.jpeg" alt="Image 6" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 7 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img3.jpeg" alt="Image 7" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 8 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img4.jpeg" alt="Image 8" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img6.jpeg" alt="Image 9" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img7.jpeg" alt="Image 10" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img8.jpeg" alt="Image 11" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img9.jpeg" alt="Image 12" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img10.jpeg" alt="Image 13" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+      <!-- Slide 9 -->
+      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="img11.jpeg" alt="Image 14" style="width: 83%;border: 3px solid green; height: 300px; margin-left: -5px;"></div>
+   </div>
+   <!-- Pagination -->
+<div class="swiper-pagination" style="position: absolute; margin-bottom: -1850px;"></div>
+</div>
+</div>
+<!-- Gallery section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <h1 class="heading"> our blogs </h1>
+
+   <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="virtual-gym-activity-concept_23-2148530531.jpg" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>फिटनेस टेक: ऐप्स और गैजेट्स जो आपकी वर्कआउट्स को बेहतर बनाएंगे</h3>
+               <a href="blog18-hindi.html" class="btn">read more</a>
+               <h3>Fitness Tech: Apps and Gadgets to Elevate Your Workouts </h3>
+               <a href="blog18.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="download (19).jfif" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>बारिश के मौसम में आज़माने के लिए बाहरी एडवेंचर खेल</h3>
+               <a href="blog17-hindi.html" class="btn">read more</a>
+               <h3>Outdoor Adventure Sports to Try This rainy season </h3>
+               <a href="blog17.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="download (16).jfif" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>प्रेरणा का विज्ञान: अपने फिटनेस लक्ष्यों को बनाए रखना</h3>
+               <a href="blog16-hindi.html" class="btn">read more</a>
+               <h3>The Science of Motivation: Sticking to Your Fitness Goals </h3>
+               <a href="blog16.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="serene-yoga-workout-garden-poses-mental-physical-health_1245763-94911.jpg" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>तनाव राहत और विश्राम के लिए योग आसन</h3>
+               <a href="blog15-hindi.html" class="btn">read more</a>
+               <h3>Yoga Poses for Stress Relief and Relaxation </h3>
+               <a href="blog15.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="infographic-explaining-how-optimize-nutrition-athlete_861346-82252.jpg" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>सर्वश्रेष्ठ खेल प्रदर्शन के लिए पोषण संबंधी टिप्स</h3>
+               <a href="blog14-hindi.html" class="btn">read more</a>
+               <h3>Nutrition Tips for Optimal Athletic Performance </h3>
+               <a href="blog14.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="Rainwater-Harvesting-1.png" alt="" style="height: 250px; width: 400px; object-fit: cover; margin-left: -30px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>भविष्य की ओर: राधा निवास, नायगांव में KK Create and Build द्वारा वर्षा जल संचयन</h3>
+               <a href="waterharvesting-hindi.html" class="btn">read more</a>
+               <h3>Embracing the Future: Rainwater Harvesting at Radha Nilaya, Naigaon by KK Create and Build </h3>
+               <a href="waterharvesting.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="stp.jpeg" alt="" style="height: 250px; width: 400px; object-fit: cover; margin-left: -30px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>नायगांव (पालघर) में राधा निवास द्वारा KK Create and Build का पहला पानी की बैंक: EECO GREEN STP</h3>
+               <a href="STP-hindi.html" class="btn">read more</a>
+               <h3>Naigaon’s First Paani Ki Bank: EECO GREEN STP at Radha Nilaya,Naigaon(Palghar) by KK Create and Build</h3>
+               <a href="STP.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="solar power.jpeg" alt="" style="height: 250px; width: 400px; object-fit: cover; margin-left: -30px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>सतत जीवन की शुरुआत: नायगांव (पालघर) में राधा निवास का परिचय</h3>
+               <a href="solar-power-hindi.html" class="btn">read more</a>
+               <h3>The Dawn of Sustainable Living: Introducing Radha Nilaya at Naigaon(Palghar) </h3>
+               <a href="solar-power.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="radha-complex.jpg" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;margin-left: -12px;">
+            </div>
+            <div class="content">
+               <h3>राधा निलया, नायगांव (पालघर), के साथ आधुनिक जीवन का अनुभव करें</h3>
+               <a href="radha-nilaya-hindi.html" class="btn">read more</a>
+               <h3>Discover Modern Living with Radha Nilaya,Naigaon(Palghar)</h3>
+               <a href="radha-nilaya.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="image.png" alt="" style="height: 250px; width: 400px; object-fit: contain; margin-left: -30px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content" style="height: 250px;">
+               <h3>KK CREATE & BUILD 2024 पैरा ओलंपिक में पदक जीतने पर सभी को बधाई देता है!</h3>
+               <a href="paralympics-hindi.html" class="btn">read more</a>
+               <h3>KK CREATE & BUILD Congratulates to all for winning Medals at the 2024 Paralympics </h3>
+               <a href="paralympics.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="sumit.jfif" alt="" style="height: 250px; width: 380px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>KK CREATE & BUILD सुमित अंतिल को 2024 पैरालंपिक में गोल्ड मेडल जीतने के लिए बधाई देता है।</h3>
+               <a href="sumit-hindi.html" class="btn">read more</a>
+               <h3>KK CREATE & BUILD Congratulates Sumit Antil for winning gold Medal at the 2024 Paralympics </h3>
+               <a href="sumit.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="download (21).jfif" alt="" style="height: 250px; width: 400px;margin-left: -30px;margin-top: -2px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content" style="height: 250px;">
+               <h3>KK CREATE & BUILD मनीष नरवाल को 2024 पैरालंपिक्स में रजत पदक जीतने पर बधाई देता है।</h3>
+               <a href="manish-hindi.html" class="btn">read more</a>
+               <h3>KK CREATE & BUILD Congratulates Manish Narwal for winning Silver Medal at the 2024 Paralympics</h3>
+               <a href="manish.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="download (20).jfif" alt="" style="height: 250px; width: 400px;margin-left: -30px;margin-top: -2px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>KK CREATE & BUILD प्रीति पाल को 2024 पैरालंपिक्स में कांस्य पदक जीतने पर बधाई देता है।</h3>
+               <a href="preeti-hindi.html" class="btn">read more</a>
+               <h3>KK CREATE & BUILD Congratulates Preethi Pal for winning Bronze Medal at the 2024 Paralympics</h3>
+               <a href="preeti.html" class="btn">read more</a>
+            </div>
+         </div>
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="download (18).jfif" alt="" style="height: 250px; width: 400px; object-fit: cover; margin-left: -30px; background-color: white; border: 1px solid goldenrod;">
+            </div>
+            <div class="content">
+               <h3>KK CREATE & BUILD मोना अग्रवाल को 2024 पैरालंपिक्स में कांस्य पदक जीतने पर बधाई देता है।</h3>
+               <a href="monaagrwal-hindi.html" class="btn">read more</a>
+               <h3>KK CREATE & BUILD Congratulates Mona Agarwal for winning Bronze Medal at the 2024 Paralympics </h3>
+               <a href="monaagrawal.html" class="btn">read more</a>
+            </div>
+         </div>
+         
+         
+      </div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- Contact section starts -->
+
+<section class="contact" id="contact" style="margin-top: 100px;">
+   <h1 class="heading">Contact us</h1>
+<div class="contact-info">
+
+   <div class="info">
+      <i class="fas fa-phone"></i>
+      <p>+91 72088 43484 / +91 72088 43487</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-envelope"></i>
+      <p>kkcreateandbiuld@gmail.com</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Radha Nilaya, Plot No. 164/2,<br> Bapane Village, Chandrapada Road,<br> Naigaon (E) - 401208,<br> Maharashtra, India.</p>
+   </div>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+   </div>
+
+</div>
+</section>
+<!-- contact section ends-->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+<script>
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Show the popup form when the page loads
+    function showPopup() {
+        document.getElementById('popup-form').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Hide the popup form
+    function hidePopup() {
+        document.getElementById('popup-form').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Show popup on page load
+    showPopup();
+
+    // Hide popup when overlay is clicked
+    document.getElementById('overlay').addEventListener('click', hidePopup);
+
+    // Hide popup when close icon is clicked
+    document.getElementById('close-icon').addEventListener('click', hidePopup);
+
+    // Handle form submission
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+
+        var name = document.getElementById('name').value;
+        var number = document.getElementById('number'),value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+         // Replace with your Web App URL
+         var scriptURL = "https://script.google.com/macros/s/AKfycbwDVPxQwGT91GOL9iATMRIo1hyEs7YkWPwqSNmJ7bYRYfhlVGbx98A-K0B9wpCdZ_LX9w/exec"; 
+        // Simple form submission (alert for demo purposes)
+        alert(`Thank you, ${name}. We have received your message.`);
+
+        // Optionally hide the popup after submission
+        hidePopup();
+    });
+});
+
+
+
+   // Initialize Swiper
+   var swiper = new Swiper('.swiper-container', {
+       slidesPerView: 1,
+       spaceBetween: 15,
+       loop: true, // Enable looping of slides
+       autoplay: {
+           delay: 3000, // Change slide every 3 seconds
+           disableOnInteraction: false // Allow autoplay to continue after user interaction
+       },
+       pagination: {
+           el: '.swiper-pagination',
+           clickable: true,
+       },
+       breakpoints: {
+           // Responsive settings
+           640: {
+               slidesPerView: 5,
+               spaceBetween: 15
+           },
+           768: {
+               slidesPerView: 6,
+               spaceBetween: 15
+           }
+       }
+   });
+   let valueDisplays = document.querySelectorAll(".num");
+let interval = 500;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 45000;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+</script>
+
+ <script src="script.js"></script>
+</body>
+</html>
