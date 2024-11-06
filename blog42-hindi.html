@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Blog Post</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="logo.png" type="">
+</head>
+<style>
+    /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+
+
+/* Single Post Styles */
+.post-content {
+    margin-top: 40px;
+}
+
+.post header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.post .post-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.post-body {
+    margin-top: 20px;
+}
+
+.post-body h3, .post-body h4 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.post-body ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.post-body ul li {
+    font-size: 16px;
+}
+
+.post-body p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Author Bio Styles */
+.author-bio {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.author-details h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.author-details p {
+    font-size: 16px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 40px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    font-size: 16px;
+}
+
+.comment-form {
+    margin-top: 30px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #1E90FF;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .post-header h2 {
+        font-size: 28px;
+    }
+
+    .post-image {
+        max-width: 100%;
+    }
+
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-img {
+        margin-bottom: 20px;
+    }
+}
+</style>
+<body>
+     <!-- header section starts  -->
+
+   <header class="header">
+    <a href="#" class="logo"><img src="logo.png" alt="" class="img"><h2 class="txt">KK CREATE AND<br> Build</h2></a>
+ 
+    <nav class="navbar">
+       <a href="index.html">Home</a>
+       <a href="#projects">Projects</a>
+       <a href="#contact">Contact</a>
+       <a href="#blogs">Blogs</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+ </header>
+
+ <!-- header section ends -->
+    <!-- Single Post Section -->
+    <a href="index.html"><marquee>!! दीवाली पर हम लाए हैं सस्ते घर, <b>द्वारकाधीश</b>, नायगांव (पूर्व)- पालघर में।</marquee></a>
+
+    <div class="text" style="font-size: 2.5rem;margin-top: 3px;"><font color="green">KK CREATE & BUILD - RADHA NILAYA</font></div>
+    <main class="post-content">
+        <div class="container">
+            <article class="post">
+                <header>
+                    <h2 style="text-align: center;font-size: 2.5rem;border-bottom: 1px solid green;border-top: 1px solid green;margin-top: -15px;">अपने सपनों का घर खरीदें द्वारकाधीश में: अपने बच्चों के लिए सही घर चुनें</h2>
+                    <img src="kids.png" alt="Responsive Blog Design" class="post-image">
+                </header>
+
+                <section class="post-body">
+                    <p>बच्चों के लिए डिज़ाइन किया गया घर बच्चों की सुरक्षा, आराम और विकास को हर पहलू में प्राथमिकता देता है—शारीरिक, मानसिक, और भावनात्मक रूप से। ऐसे घरों में बच्चों के खेलने के लिए सुरक्षित क्षेत्र, शैक्षिक सुविधाएँ और सामुदायिक सुविधाएँ होती हैं, जो बच्चों के लिए एक आदर्श वातावरण तैयार करती हैं। शहरीकरण के बढ़ते प्रभाव के साथ, इस तरह के घरों की मांग भी बढ़ रही है, क्योंकि माता-पिता ऐसे स्थानों की तलाश करते हैं जो सुरक्षा और सीमित जगह की चुनौतियों के बीच संतुलन बना सकें। द्वारकाधीश जैसे प्रोजेक्ट इस जरूरत को समझते हैं और बच्चों के लिए सुविधाओं से सुसज्जित घरों की पेशकश करते हैं। </p>
+                    
+                    <h3>खेल क्षेत्र</h3>
+                    <p>एक बच्चो के अनुकूल घर में एक अच्छा और सुव्यवस्थित खेल क्षेत्र होना चाहिए, जो बाहरी गतिविधियों के माध्यम से शारीरिक फिटनेस को बढ़ावा दे। एक स्पष्ट रूप से चिह्नित, बहुउद्देशीय खेल क्षेत्र बनाकर, बच्चे बास्केटबॉल, टेनिस, फुटबॉल या सॉकर जैसे खेलों में भाग ले सकते हैं, जो उनके ताकत, लचीलापन और समन्वय को बेहतर बनाने में मदद करेगा। यह बहुपरकारी क्षेत्र उन्हें पूरे साल व्यस्त रखेगा, जो शारीरिक फिटनेस और सामाजिक बातचीत दोनों को बढ़ावा देगा।</p>
+
+                    <h3>बच्चों का खेल क्षेत्र</h3>
+                    <p>एक घर में बच्चों के लिए एक सुरक्षित और अच्छी तरह से देखभाल किया गया खेल क्षेत्र होना चाहिए, जो शारीरिक गतिविधि और रचनात्मकता को बढ़ावा दे। झूलों, स्लाइड्स, और चढ़ाई की संरचनाओं से सुसज्जित यह क्षेत्र बच्चों को शारीरिक रूप से खुद को व्यक्त करने का मौका देता है, साथ ही उनकी कल्पना को भी उत्तेजित करता है। यह सामाजिक बातचीत को भी बढ़ावा देता है, जिससे बच्चे टीमवर्क और संचार जैसे महत्वपूर्ण कौशल खेल-खेल में सीख सकते हैं। एक अच्छा डिज़ाइन किया गया खेल क्षेत्र शारीरिक व्यायाम और मस्ती दोनों को बढ़ावा देता है, और एक पोषक वातावरण में स्वस्थ विकास का समर्थन करता है।</p>
+
+                    <h3>बग़ीचा और खेल का मैदान</h3>
+                    <p>एक बच्चो के अनुकूल घर में हरा-भरा बग़ीचा बच्चों को प्रकृति से जुड़ने और विभिन्न पौधों तथा उनके फायदों के बारे में सीखने का शांतिपूर्ण स्थान प्रदान करता है। बागवानी गतिविधियों के माध्यम से, बच्चे पर्यावरण के प्रति जिम्मेदारी का एहसास करते हैं। बाहरी सामुदायिक बग़ीचे भी खेल, अन्वेषण और सीखने के अवसर प्रदान करते हैं, जो पर्यावरणीय जागरूकता को बढ़ावा देते हैं और प्रकृति के प्रति गहरी सराहना उत्पन्न करते हैं। यह बाहरी वातावरण जिज्ञासा, रचनात्मकता और प्राकृतिक दुनिया के प्रति प्रेम को पोषित करता है।</p>
+
+                    <h3>सुरक्षा सुविधाएँ</h3>
+                    <p>बच्चों के लिए सुरक्षा सुनिश्चित करने में सुरक्षा गेट्स, खिड़की के लॉक, और एक सुरक्षित परिधि शामिल होती है, जो बच्चों को संभावित खतरों और बाहरी लोगों से बचाती है। ये उपाय बच्चों के लिए एक सुरक्षित वातावरण सुनिश्चित करते हैं, जहाँ वे निश्चिंत होकर खेल सकते हैं और अन्वेषण कर सकते हैं।</p>
+
+                    <h3>शिक्षा की जगह की दूरी</h3>
+                    <p>बच्चों के लिए बने घर में रहना सिर्फ सुविधाओं और मनोरंजन तक सीमित नहीं होता; अच्छे स्कूलों के पास होना भी एक महत्वपूर्ण बात है। प्रतिष्ठित स्कूलों और शैक्षिक संस्थानों के पास रहने से रोज़ाना यात्रा में समय और ऊर्जा की बचत होती है, साथ ही यह सुनिश्चित होता है कि बच्चे को गुणवत्तापूर्ण शिक्षा मिले। स्कूल चुनते समय उसकी प्रतिष्ठा, पाठ्यक्रम, सह-पाठयक्रम गतिविधियाँ, और परिवहन सुविधाओं पर विचार करना ज़रूरी है, ताकि यह बच्चे की जरूरतों के हिसाब से हो और उसे एक समग्र सीखने का अनुभव मिल सके।</p>
+
+                    <h3>स्वास्थ्य सुविधाओं की दूरी</h3>
+                    <p>बच्चे बीमारियों और चोटों के प्रति अधिक संवेदनशील होते हैं, इसलिए बच्चों के लिए बने घर चुनते समय स्वास्थ्य सुविधाओं के पास होना बहुत महत्वपूर्ण है। ऐसा स्थान चुनना, जैसे कि <b>द्वारकाधीश</b>, जो प्रतिष्ठित अस्पतालों, बाल रोग क्लीनिकों और 24/7 काम करने वाली दवाइयों की दुकानों के पास हो, एक अच्छा विकल्प होता है। इससे आपातकालीन स्थिति में जल्दी चिकित्सा देखभाल मिल सकती है, जिससे माता-पिता को शांति मिलती है और बच्चों को सुरक्षित और स्वस्थ रखा जा सकता है।</p>
+
+                    <p>एक बच्चों के अनुकूल घर सिर्फ एक मज़ेदार और सुरक्षित वातावरण बनाने के बारे में नहीं होता, बल्कि यह बच्चों और परिवार के लिए सुविधाजनक, सुलभ और स्वास्थ्यवर्धक होना भी ज़रूरी है। शारीरिक गतिविधि, रचनात्मकता और शिक्षा के लिए जगहों की सोच-समझ कर योजना बनाना, सुरक्षा उपायों को लागू करना, अच्छे स्कूलों के पास होना और स्वास्थ्य सुविधाओं तक आसान पहुंच प्रदान करना, सभी बच्चों की वृद्धि और विकास में महत्वपूर्ण भूमिका निभाते हैं। चाहे वह एक अच्छा डिज़ाइन किया गया खेल क्षेत्र हो, एक पोषक बग़ीचा हो, या एक सुरक्षित रहने की जगह हो, सही घर बच्चों को विकसित होने, अन्वेषण करने और उनके भविष्य के लिए एक मजबूत आधार बनाने का अवसर प्रदान कर सकता है।</p>
+                </section>
+
+                <!-- Contact section starts -->
+
+<section class="contact" id="contact" style="margin-top: 50px;">
+    <h1 class="heading">Contact us</h1>
+ <div class="contact-info">
+ 
+    <div class="info">
+       <i class="fas fa-phone"></i>
+       <p>+91 72088 43484 / +91 72088 43487</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-envelope"></i>
+       <p>kkcreateandbiuld@gmail.com</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-map-marker-alt"></i>
+       <p>Radha Nilaya, Plot No. 164/2,<br> Bapane Village, Chandrapada Road,<br> Naigaon (E) - 401208,<br> Maharashtra, India.</p>
+    </div>
+ 
+    <div class="share">
+       <a href="#" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-linkedin"></a>
+    </div>
+ 
+ </div>
+ </section>
+ <!-- contact section ends-->
+ <script src="script.js"></script> 
+</body>
+</html> 

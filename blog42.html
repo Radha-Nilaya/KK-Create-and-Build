@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Blog Post</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="logo.png" type="">
+</head>
+<style>
+    /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+
+
+/* Single Post Styles */
+.post-content {
+    margin-top: 40px;
+}
+
+.post header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.post .post-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.post-body {
+    margin-top: 20px;
+}
+
+.post-body h3, .post-body h4 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.post-body ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.post-body ul li {
+    font-size: 16px;
+}
+
+.post-body p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Author Bio Styles */
+.author-bio {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.author-details h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.author-details p {
+    font-size: 16px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 40px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    font-size: 16px;
+}
+
+.comment-form {
+    margin-top: 30px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #1E90FF;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .post-header h2 {
+        font-size: 28px;
+    }
+
+    .post-image {
+        max-width: 100%;
+    }
+
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-img {
+        margin-bottom: 20px;
+    }
+}
+</style>
+<body>
+     <!-- header section starts  -->
+
+   <header class="header">
+    <a href="#" class="logo"><img src="logo.png" alt="" class="img"><h2 class="txt">KK CREATE AND<br> Build</h2></a>
+ 
+    <nav class="navbar">
+       <a href="index.html">home</a>
+       <a href="#projects">projects</a>
+       <a href="#contact">contact</a>
+       <a href="#blogs">blogs</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+ </header>
+
+ <!-- header section ends -->
+    <!-- Single Post Section -->
+    <a href="index.html"><marquee>!! Is Diwali Hum Leke Aaye Hai <b>Affordable Homes</b> In <b>Dwarkadhish</b>, Naigaon(E)- Palghar</marquee></a>
+
+    <div class="text" style="font-size: 2.5rem;margin-top: 3px;"><font color="green">KK CREATE & BUILD - RADHA NILAYA</font></div>
+    <main class="post-content">
+        <div class="container">
+            <article class="post">
+                <header>
+                    <h2 style="text-align: center;font-size: 2.5rem;border-bottom: 1px solid green;border-top: 1px solid green;margin-top: -15px;">Buy Your Dream Home in Dwarkadhish:Choosing the Right Home for Your Kids</h2>
+                    <img src="kids.png" alt="Responsive Blog Design" class="post-image">
+                </header>
+
+                <section class="post-body">
+                    <p>A kid-centric home is designed to prioritize a child's safety, comfort, and development in all aspects—physical, mental, and emotional. These homes feature child-friendly play areas, educational facilities, and community amenities that create an ideal environment for children to thrive. With urbanization increasing, the demand for such homes is growing, as parents seek spaces that balance safety with the challenges of limited space. Projects like <b>DWARKADHISH</b> recognize this need, offerin</p>
+                    
+                    <h3>Sport Area</h3>
+                    <p>A kid-friendly home should feature a well-planned sports area that encourages physical fitness through outdoor activities. By creating a clearly marked, multi-sport turf area, children can engage in basketball, tennis, soccer, or football, which will help improve their strength, agility, and coordination.This multi-use area will keep them engaged year-round, promoting both physical fitness and social interaction.</p>
+
+                    <h3>Kids Play Area</h3>
+                    <p>A home with children should have a safe, well-maintained play area that encourages physical activity and creativity. Equipped with swings, slides, and climbing structures, the space allows kids to express themselves physically while sparking their imagination. It also fosters social interaction, helping children build important skills like teamwork and communication through play. A well-designed play area promotes both exercise and fun, supporting healthy development in a nurturing environment.</p>
+
+                    <h3>Garden and playground</h3>
+                    <p>A green garden area in a child-centric home provides a peaceful space where kids can connect with nature and learn about different plants and their benefits. Through gardening activities, children develop a sense of responsibility towards the environment. Outdoor community gardens also offer opportunities for play, exploration, and learning, encouraging environmental awareness while fostering a deeper appreciation for nature. This outdoor setting nurtures curiosity, creativity, and a love for the natural world.</p>
+
+                    <h3>Safety Features</h3>
+                    <p>Childproofing also includes safety gates, window locks, and a secure perimeter to protect children from potential hazards and intruders. These precautions ensure a safe environment where kids can play and explore with peace of mind.</p>
+
+                    <h3>Distance to Educational Facilities</h3>
+                    <p>Living in a child-centric home goes beyond just amenities and recreation; proximity to good schools is a key factor. Being close to reputed schools and educational institutions saves time and energy on daily commutes, while ensuring the child has access to quality education. When selecting a school, it's important to consider its reputation, curriculum, extracurricular activities, and transport facilities to ensure it aligns with the child's needs and provides a well-rounded learning experience.</p>
+
+                    <h3>Distance to Healthcare Facilities</h3>
+                    <p>Children are more susceptible to illnesses and injuries, making proximity to healthcare facilities a crucial consideration when choosing a child-centric home. It's important to select a location, such as <b>Dwarkadhish</b>, that is close to reputable hospitals, pediatric clinics, and pharmacies that operate 24/7. This ensures quick access to medical care in case of emergencies, providing peace of mind for parents while keeping their children safe and healthy.</p>
+
+                    <p>A child-centric home is not just about creating a fun and safe environment but also ensuring convenience, accessibility, and well-being for both the child and the family. Thoughtful planning of spaces for physical activity, creativity, and learning, combined with safety measures, proximity to quality schools, and easy access to healthcare facilities, plays a vital role in a child’s growth and development. Whether it’s a well-designed sports area, a nurturing garden, or a safe living space, the right home can provide children with the opportunity to thrive, explore, and build a strong foundation for their future.</p>
+                </section>
+
+                <!-- Contact section starts -->
+
+<section class="contact" id="contact" style="margin-top: 50px;">
+    <h1 class="heading">Contact us</h1>
+ <div class="contact-info">
+ 
+    <div class="info">
+       <i class="fas fa-phone"></i>
+       <p>+91 72088 43484 / +91 72088 43487</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-envelope"></i>
+       <p>kkcreateandbiuld@gmail.com</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-map-marker-alt"></i>
+       <p>Radha Nilaya, Plot No. 164/2,<br> Bapane Village, Chandrapada Road,<br> Naigaon (E) - 401208,<br> Maharashtra, India.</p>
+    </div>
+ 
+    <div class="share">
+       <a href="#" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-linkedin"></a>
+    </div>
+ 
+ </div>
+ </section>
+ <!-- contact section ends-->
+ <script src="script.js"></script> 
+</body>
+</html>
