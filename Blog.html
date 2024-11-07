@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="shortcut icon" href="logo.png" type="">
+    <style>/* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        /* Header Styles */
+                /* Featured Post Styles */
+        .featured-post {
+            margin-bottom: 40px;
+        }
+        
+        .featured-post h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .featured-post-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .featured-post img {
+            width: 100%;
+            max-width: 50%;
+            border-radius: 10px;
+        }
+        
+        .featured-content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .featured-content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .featured-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .featured-content .read-more {
+            color: #1E90FF;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        /* Blog Post Styles */
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .blog-posts .post {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-posts .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        
+        .blog-posts .post-info {
+            padding: 20px;
+        }
+        
+        .blog-posts .post h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .blog-posts .post .date {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .blog-posts .post .read-more {
+            color: #1E90FF;
+            font-weight: bold;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .sidebar h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar ul li a {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .sidebar ul li a:hover {
+            color: #1E90FF;
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .blog-posts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            .featured-post-container {
+                flex-direction: column;
+            }
+        
+            .featured-post img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .blog-posts {
+                grid-template-columns: 1fr;
+            }
+        
+            .header h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+        
+            nav ul {
+                text-align: center;
+            }
+        
+            nav ul li {
+                display: inline;
+                margin: 10px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <!-- header section starts  -->
+
+<header class="header">
+    <a href="#" class="logo"><img src="logo.png" alt="" class="img"><h2 class="txt">KK CREATE AND<br> Build</h2></a>
+ 
+    <nav class="navbar">
+       <a href="index.html">Home</a>
+       <a href="#projects">Projects</a>
+       <a href="#">News & Media</a>
+       <a href="#contact">Contact</a>
+       <a href="#blogs">Blogs</a>
+       <a href="#">Privacy Policy</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+ </header>
+ 
+ <!-- header section ends -->
+ <a href="index.html"><marquee>!! Is Diwali Hum Leke Aaye Hai <b>Affordable Homes</b> In <b>Dwarkadhish</b>, Naigaon(E)- Palghar</marquee></a>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Post -->
+            <section class="featured-post">
+                <h2>BLOG</h2>
+                <div class="featured-post-container">
+                    <img src="lifestyle.png" alt="Featured Blog Post">
+                    <div class="featured-content">
+                        <h3><a href="blog41.html">Buy Your Dream Home in Dwarkadhish:Active Living, Elevated Lifestyle</a></h3>
+                        <p class="date" style="font-size: 1.8rem;font-weight: bold;"><a href="blog41-hindi.html">अपने सपनों का घर खरीदें द्वारकाधीश में: सक्रिय जीवन, ऊँचा जीवनस्तर।</a></p>
+                        <a href="blog41-hindi.html" class="read-more">Read More</a>
+                        <p>In recent years, the concept of lifestyle-centric living has transformed the resident...</p>
+                        <a href="blog41.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Posts -->
+            <section class="blog-posts">
+                <div class="post">
+                    <img src="kids.png" alt="Post 1">
+                    <div class="post-info">
+                        <h3><a href="blog42.html">Choosing the Right Home for Your Kids</a></h3>
+                        <p class="date"><a href="blog42-hindi.html">अपने बच्चों के लिए सही घर चुनें</a></p>
+                        <a href="blog42-hindi.html" class="read-more">Read More</a>
+                        <p>A kid-centric home is designed to prioritize a child's safety, comfort, and develop...</p>
+                        <a href="blog42.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="affordable.png" alt="Post 2">
+                    <div class="post-info">
+                        <h3><a href="blog40.html">Dwarkadhish:Where Affordability Meets Opportunity!</a></h3>
+                        <p class="date"><a href="blog40-hindi.html">द्वारकाधीश:जहां सस्ती कीमतें और अवसर मिलते हैं!</a></p>
+                        <a href="blog40-hindi.html" class="read-more">Read More</a>
+                        <p>Naigaon is an attractive real estate investment destination due to its strategic location near Mumbai...</p>
+                        <a href="blog40.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="invest.png" alt="Post 3">
+                    <div class="post-info">
+                        <h3><a href="blog39.html">Invest Smart, Secure Your Future!</a></h3>
+                        <p class="date"><a href="blog39-hindi.html">अच्छा निवेश करें, अपना भविष्य बचाएं!</a></p>
+                        <a href="blog39-hindi.html" class="read-more">Read More</a>
+                        <p>Naigaon East has emerged as a focal point for rapid infrastructure develop...</p>
+                        <a href="blog39.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="Checklist.png" alt="Post 3">
+                    <div class="post-info">
+                        <h3><a href="blog38.html">Key Checklist for Your 1 BHK Flat!</a></h3>
+                        <p class="date"><a href="blog38-hindi.html">1 BHK फ्लैट के लिए महत्वपूर्ण चेकलिस्ट!</a></p>
+                        <a href="blog38-hindi.html" class="read-more">Read More</a>
+                        <p>When purchasing a 1 BHK flat, it's essential to ensure all legal docu...</p>
+                        <a href="blog38.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<!-- Contact section starts -->
+
+<section class="contact" id="contact" style="margin-top: 100px;">
+    <h1 class="heading">Contact us</h1>
+ <div class="contact-info">
+ 
+    <div class="info">
+       <i class="fas fa-phone"></i>
+       <p>+91 72088 43484 / +91 72088 43487</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-envelope"></i>
+       <p>kkcreateandbiuld@gmail.com</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-map-marker-alt"></i>
+       <p>Radha Nilaya, Plot No. 164/2,<br> Bapane Village, Chandrapada Road,<br> Naigaon (E) - 401208,<br> Maharashtra, India.</p>
+    </div>
+ 
+    <div class="share">
+       <a href="#" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-linkedin"></a>
+    </div>
+ 
+ </div>
+ </section>
+ <!-- contact section ends-->
+</body>
+</html>
