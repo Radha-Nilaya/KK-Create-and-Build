@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Blog Post</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="logo.png" type="">
+</head>
+<style>
+    /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+
+
+/* Single Post Styles */
+.post-content {
+    margin-top: 40px;
+}
+
+.post header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.post .post-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.post-body {
+    margin-top: 20px;
+}
+
+.post-body h3, .post-body h4 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+.post-body h3{
+    color: navy;
+}
+.post-body ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.post-body ul li {
+    font-size: 16px;
+}
+
+.post-body p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Author Bio Styles */
+.author-bio {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.author-details h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.author-details p {
+    font-size: 16px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 40px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    font-size: 16px;
+}
+
+.comment-form {
+    margin-top: 30px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #1E90FF;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .post-header h2 {
+        font-size: 28px;
+    }
+
+    .post-image {
+        max-width: 100%;
+    }
+
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-img {
+        margin-bottom: 20px;
+    }
+}
+</style>
+<body>
+     <!-- header section starts  -->
+
+   <header class="header">
+    <a href="#" class="logo"><img src="logo.png" alt="" class="img"><h2 class="txt">KK CREATE AND<br> Build</h2></a>
+ 
+    <nav class="navbar">
+       <a href="index.html">home</a>
+       <a href="#projects">projects</a>
+       <a href="#contact">contact</a>
+       <a href="#blogs">blogs</a>
+    </nav>
+ 
+    <div class="icons">
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+ 
+ </header>
+
+ <!-- header section ends -->
+    <!-- Single Post Section -->
+    <a href="index.html"><marquee>!! Is Diwali Hum Leke Aaye Hai <b>Affordable Homes</b> In <b>Dwarkadhish</b>, Naigaon(E)- Palghar</marquee></a>
+
+    <div class="text" style="font-size: 2.5rem;margin-top: 3px;"><font color="green">KK CREATE & BUILD - RADHA NILAYA</font></div>
+    <main class="post-content">
+        <div class="container">
+            <article class="post">
+                <header>
+                    <h2 style="text-align: center;font-size: 2.5rem;border-bottom: 1px solid green;border-top: 1px solid green;margin-top: -15px;">Buy Your Dream Home in Dwarkadhish:Top 10 Family-Friendly Amenities for Apartments in 2024</h2>
+                    <img src="family.png" alt="Responsive Blog Design" class="post-image">
+                </header>
+
+                <section class="post-body">
+                    <p>As urban living evolves, smart apartments are becoming the go-to choice for residents seeking a blend of comfort, convenience, and community. In 2024, these apartments must prioritize high-quality amenities that cater to diverse needs, from advanced technology to sustainability. The right features can elevate the living experience, making everyday life easier, safer, and more connected. This blog highlights the top 10 must-have amenities every smart apartment should offer for modern living.</p>
+                    <h3 style="color: rgb(85, 84, 84);">Must-Have Amenities for Apartment</h3>
+                    <p>Smart apartments are defined by the amenities they offer, turning everyday living into a dynamic experience. Essential features like gardens, yoga spaces, cricket turfs, jogging tracks, kids' play areas, and outdoor gymnasiums are key to promoting health, recreation, and community. These amenities enhance residents' well-being and foster a more connected, active lifestyle. Let’s dive into the must-have amenities that define the modern apartment.</p>
+
+                    <h3>KIDS PLAY AREA</h3>
+                    <p>For families with children, a well-equipped <b>Kids' Fun Zone</b> is an essential amenity. This space should offer a variety of play equipment, including swings, slides, and interactive games, to keep children engaged, active, and entertained. Safety is a top priority, so the play area should feature soft flooring, secure fencing, and age-appropriate designs. Beyond play, a thoughtfully designed kids' area also provides a gathering spot for parents, allowing them to socialize and connect with other families, ultimately fostering a strong sense of community within the apartment complex.</p>
+
+                    <h3>OUTDOOR GYMNASIUMS </h3>
+                    <p><b>Outdoor Gymnasiums</b> in modern apartments are becoming an increasingly popular amenity, offering residents the perfect blend of fitness and nature. Equipped with durable, weather-resistant exercise machines such as resistance trainers, pull-up bars, and cardio stations, these gyms provide a variety of workout options in an open-air setting. Not only do they promote physical health, but they also encourage a sense of community, as residents can interact while exercising outdoors. With the added benefits of fresh air and natural surroundings, outdoor gymnasiums create a rejuvenating fitness experience, making it easier and more enjoyable for residents to stay active and healthy.</p>
+
+                    <h3>JOGGING TRACKS</h3>
+                    <p>Dedicated <b>jogging tracks</b>are a key amenity in modern apartments, promoting an active and healthy lifestyle among residents. These tracks should be thoughtfully designed with safety and accessibility in mind, offering a smooth, well-maintained path for runners and joggers of all levels. Incorporating greenery and landscaping along the route can enhance the outdoor experience, creating a calming and scenic environment. By encouraging outdoor fitness, jogging tracks not only help residents stay in shape but also provide an opportunity to connect with nature, making exercise more enjoyable and rejuvenating.</p>
+
+                    <h3>YOGA AND MEDITATION AREA</h3>
+                    <p>A dedicated **yoga and meditation space** is an essential amenity for every modern apartment, offering residents a tranquil environment to practice yoga, meditation, and focus on their mental well-being. By fostering relaxation and mindfulness, these spaces significantly enhance the overall wellness experience, making them an invaluable feature for those pursuing a balanced and holistic lifestyle. Dwarkadhish recognizes the importance of this amenity and has thoughtfully incorporated a beautifully designed yoga deck, providing residents with the perfect space for relaxation, personal growth, and mental rejuvenation.</p>
+
+                    <h3>MULTI-SPORTS TURF</h3>
+                    <p>A multipurpose turf is an invaluable amenity that greatly enriches the living experience in any modern apartment community. It provides residents with a versatile space to engage in a variety of sports and recreational activities, promoting physical fitness while also fostering community interaction through both organized events and casual games. By creating an environment that encourages active participation and social connections, such facilities contribute significantly to a well-rounded and fulfilling lifestyle. Dwarkadhish thoughtfully incorporates this multipurpose turf, ensuring residents have access to diverse recreational opportunities that support their overall well-being and quality of life.</p>
+
+                    <h3>SENIOR CITIZEN PARK</h3>
+                    <p>A dedicated senior citizen area is a vital amenity that greatly enhances the quality of life in any integrated modern apartment community. These spaces are designed with the safety, comfort, and well-being of older adults in mind, fostering social interaction and helping to alleviate feelings of isolation. By offering amenities that support both physical and mental health, such areas empower seniors to lead fulfilling and active lifestyles. Dwarkadhish understands the importance of this feature and has thoughtfully created a dedicated space for senior citizens, promoting wellness, social engagement, and a strong sense of community among its residents.</p>
+
+                    <h3>LANDSCAPED GARDENS</h3>
+                    <p>Landscaped gardens are essential features that enhance both the aesthetic appeal and well-being of a community. These green spaces offer opportunities for outdoor activities, relaxation, and a deeper connection with nature, fostering a serene atmosphere and promoting mindfulness. Dwarkadhish understands the value of such amenities and has thoughtfully incorporated beautifully landscaped gardens, including a forest-themed garden, butterfly garden, and aroma park. These unique spaces not only add to the community's charm but also encourage residents to embrace a healthier, more balanced lifestyle.</p>
+
+                    <h3>CCTV SURVEILLANCE</h3>
+                    <p>In Dwarkadhish, CCTV surveillance is a key feature that ensures the safety and security of residents. With 24/7 monitoring of common areas like entrances, parking lots, and hallways, the system helps deter crime and provides real-time alerts in case of suspicious activity. Integrated with smart technologies, it allows residents to remotely access live feeds and manage visitor entry, enhancing convenience and security. Privacy is prioritized by restricting cameras to public spaces, and regular maintenance ensures the system remains efficient, offering residents peace of mind and a safe living environment.</p>
+
+                    <h3>SOLAR ENERGY</h3>
+                    <p>In modern apartments like Dwarkadhish, solar power is a key feature that promotes sustainability and energy efficiency. By harnessing solar energy, the building can power common areas such as lighting, elevators, and water systems, reducing electricity costs and the carbon footprint. Solar power also supports eco-friendly initiatives, such as water heating, making Dwarkadhish a greener, more self-sufficient community. This not only helps residents save on energy bills but also contributes to a more sustainable future.</p>
+
+                    <h3>RAIN WATER HARVESTING</h3>
+                    <p>In modern apartments like Dwarkadhish, rainwater harvesting is a key sustainability feature that helps conserve water and reduce dependence on external sources. By collecting and storing rainwater from rooftops, the system ensures efficient use for non-potable purposes like landscaping, cleaning, and toilet flushing. This eco-friendly initiative not only lowers water bills but also supports the community’s commitment to resource conservation and environmental responsibility.</p>
+
+                    <h3>CONCLUSION</h3>
+                    <p>Incorporating these top 10 amenities is essential for any smart township aiming to offer a fulfilling living experience in 2024. By prioritizing community-focused features, recreational spaces, and essential services, apartments can foster vibrant environments that cater to the diverse needs of their residents. Communities like those in Vasai, Mumbai, exemplify how these amenities can significantly enhance quality of life, making them integral to modern township living. By thoughtfully integrating these elements, smart townships can create spaces where residents feel connected, engaged, and truly at home.</p>
+                </section>
+
+                <!-- Contact section starts -->
+
+<section class="contact" id="contact" style="margin-top: 50px;">
+    <h1 class="heading">Contact us</h1>
+ <div class="contact-info">
+ 
+    <div class="info">
+       <i class="fas fa-phone"></i>
+       <p>+91 72088 43484 / +91 72088 43487</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-envelope"></i>
+       <p>kkcreateandbiuld@gmail.com</p>
+    </div>
+ 
+    <div class="info">
+       <i class="fas fa-map-marker-alt"></i>
+       <p>Radha Nilaya, Plot No. 164/2,<br> Bapane Village, Chandrapada Road,<br> Naigaon (E) - 401208,<br> Maharashtra, India.</p>
+    </div>
+ 
+    <div class="share">
+       <a href="#" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-linkedin"></a>
+    </div>
+ 
+ </div>
+ </section>
+ <!-- contact section ends-->
+ <script src="script.js"></script> 
+</body>
+</html>
